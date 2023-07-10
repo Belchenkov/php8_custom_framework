@@ -38,3 +38,9 @@
 =================
 [2023-07-07 21:09:53] Текст ошибки: Error exception! | Файл: C:\OSPanel\domains\new-ishop.loc\public\index.php | Строка: 11
 =================
+[2023-07-10 18:38:09] Текст ошибки: Error exception! | Файл: C:\OSPanel\domains\new-ishop.loc\public\index.php | Строка: 13
+=================
+[2023-07-10 20:16:08] Текст ошибки: Undefined array key "admin_prefix" | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 31
+=================
+[2023-07-10 20:16:18] Текст ошибки: Undefined array key "admin_prefix" | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 31
+=================
