@@ -11,7 +11,14 @@ class MainController extends Controller
 
     public function indexAction()
     {
-        echo __METHOD__;
-    }
+        $this->setMeta(
+            'Главная страница',
+            'Описание ...',
+            'Ключевые слова ...',
+        );
 
+        $this->set([
+            'name' => 'Main Index'
+        ]);
+    }
 }
