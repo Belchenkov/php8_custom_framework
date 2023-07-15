@@ -11,6 +11,9 @@ class MainController extends Controller
 
     public function indexAction()
     {
+
+        $names = $this->model->get_names();
+ 
         $this->setMeta(
             'Главная страница',
             'Описание ...',
@@ -18,7 +21,8 @@ class MainController extends Controller
         );
 
         $this->set([
-            'name' => 'Main Index'
+            'name' => 'Main Index',
+            'names' => $names
         ]);
     }
 }

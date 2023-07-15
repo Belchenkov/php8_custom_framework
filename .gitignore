@@ -1,3 +1,6 @@
 /.idea
 /.vscode
 /tmp/logs/
+/vendor/gabordemooij
+/vendor/composer
+/vendor/autoload.php
