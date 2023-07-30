@@ -236,3 +236,7 @@
 =================
 [2023-07-29 08:30:00] Текст ошибки: Контроллер app\controllers\CategoryController не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 65
 =================
+[2023-07-30 10:31:44] Текст ошибки: Контроллер app\controllers\CartController не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 65
+=================
+[2023-07-30 10:31:44] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 69
+=================

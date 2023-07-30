@@ -1,4 +1,29 @@
 $(function() {
+	// CART
+	$('.add-to-cart')
+		.on('click', function(e) {
+			e.preventDefault();
+
+			const id = $(this).data('id');
+			const qty = $('#input-quantity').val() ?? 1;
+
+			$.ajax({
+				url: 'cart/add',
+				type: 'GET',
+				data: {
+					id,
+					qty,
+				},
+				success: function(res) {
+					console.log(res);
+				},
+				error: function() {
+					alert('Error!')
+				}
+
+			});
+		});
+
 
 	$('.open-search').click(function(e) {
 		e.preventDefault();
