@@ -189,6 +189,10 @@ li a.dropdown-item:focus, li a.dropdown-item:hover {
 .modal-body a {
 	color: #ee6e73;
 }
+
+.cart-table img {
+	max-height: 50px;
+}
 /* Header top */
 
 /* Header bottom */
@@ -226,7 +230,7 @@ li a.dropdown-item:focus, li a.dropdown-item:hover {
 .my-carousel {
 	padding: 0;
 	position: relative;
-	top: -6px;
+	top: -10px;
 }
 .my-carousel .carousel-item {
 	display: flex;
