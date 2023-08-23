@@ -10,7 +10,7 @@ function debug($data, $die = false)
 
 function h($str)
 {
-    return htmlspecialchars($str);
+    return htmlspecialchars(($str ?? ''));
 }
 
 function redirect($http = false)
