@@ -278,3 +278,5 @@
 =================
 [2023-08-23 16:33:53] Текст ошибки: htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\helpers\functions.php | Строка: 13
 =================
+[2023-08-24 20:36:04] Текст ошибки: Undefined variable $breadcrumbs | Файл: C:\OSPanel\domains\new-ishop.loc\app\views\Product\view.php | Строка: 10
+=================
