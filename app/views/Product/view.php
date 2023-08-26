@@ -12,11 +12,10 @@ use wfm\View;
     </nav>
 </div>
 
+
 <div class="container py-3">
     <div class="row">
-
         <div class="col-md-4 order-md-2">
-
             <h1><?= $product['title'] ?></h1>
 
             <ul class="list-unstyled">
@@ -58,6 +57,5 @@ use wfm\View;
 
             <?= $product['content']; ?>
         </div>
-
     </div>
 </div>
