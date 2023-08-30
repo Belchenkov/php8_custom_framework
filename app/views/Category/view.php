@@ -16,6 +16,7 @@
 
 <div class="container py-3">
     <div class="row">
+
         <div class="col-lg-12 category-content">
             <h3 class="section-title"><?= $category['title'] ?></h3>
 
@@ -32,7 +33,7 @@
                         <div class="input-group mb-3">
                             <label class="input-group-text" for="input-sort"><?php __('category_view_sort'); ?>:</label>
                             <select class="form-select" id="input-sort">
-                                <option selected=""><?php __('category_view_sort_by_default'); ?></option>
+                                <option selected="" disabled><?php __('category_view_sort_by_default'); ?></option>
 
                                 <option value="sort=title_asc" <?php if (isset($_GET['sort']) && $_GET['sort'] == 'title_asc') echo 'selected' ?>><?php __('category_view_sort_title_asc'); ?></option>
 
