@@ -2,5 +2,6 @@
 /.vscode
 /tmp/logs/
 /vendor/gabordemooij
+/vendor/vlucas
 /vendor/composer
 /vendor/autoload.php
