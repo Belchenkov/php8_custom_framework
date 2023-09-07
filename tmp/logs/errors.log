@@ -292,3 +292,7 @@
 =================
 [2023-09-06 15:48:03] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 69
 =================
+[2023-09-07 18:26:23] Текст ошибки: Class "Valitron\Validator" not found | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Model.php | Строка: 32
+=================
+[2023-09-07 18:31:10] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 206
+=================

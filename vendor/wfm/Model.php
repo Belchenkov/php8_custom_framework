@@ -4,6 +4,7 @@
 namespace wfm;
 
 use Valitron\Validator;
+use RedBeanPHP\R;
 abstract class Model
 {
 
@@ -65,5 +66,18 @@ abstract class Model
             $labels[$k] = ___($v);
         }
         return $labels;
+    }
+    
+    public function save($table): int|string
+    {
+        $tbl = R::dispense($table);
+        
+        foreach ($this->attributes as $name => $value) {
+            if ($value != '') {
+                $tbl->$name = $value;
+            }
+        }
+
+        return R::store($tbl);
     }
 }
