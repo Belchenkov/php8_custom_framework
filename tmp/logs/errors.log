@@ -296,3 +296,5 @@
 =================
 [2023-09-07 18:31:10] Текст ошибки: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\gabordemooij\redbean\RedBeanPHP\Driver\RPDO.php | Строка: 206
 =================
+[2023-09-11 17:09:00] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 69
+=================
