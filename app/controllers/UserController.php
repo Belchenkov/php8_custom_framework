@@ -4,6 +4,7 @@
 namespace app\controllers;
 
 use app\models\User;
+use wfm\Pagination;
 
 /** @property User $model */
 class UserController extends AppController
@@ -70,7 +71,26 @@ class UserController extends AppController
         if (!User::checkAuth()) {
             redirect(base_url() . 'user/login');
         }
-        
+
         $this->setMeta(___('tpl_cabinet'));
+    }
+
+    public function ordersAction()
+    {
+        if (!User::checkAuth()) {
+            redirect(base_url() . 'user/login');
+        }
+
+        $page = get('page');
+//        $perpage = App::$app->getProperty('pagination');
+        $perpage = 5;
+        $total = $this->model->get_count_orders($_SESSION['user']['id']);
+        $pagination = new Pagination($page, $perpage, $total);
+        $start = $pagination->getStart();
+
+        $orders = $this->model->get_user_orders($start, $perpage, $_SESSION['user']['id']);
+
+        $this->setMeta(___('user_orders_title'));
+        $this->set(compact('orders', 'pagination', 'total'));
     }
 }
