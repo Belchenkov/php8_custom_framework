@@ -11,6 +11,45 @@ use wfm\App;
 class UserController extends AppController
 {
 
+    
+    public function credentialsAction()
+    {
+        if (!User::checkAuth()) {
+            redirect(base_url() . 'user/login');
+        }
+
+        if (!empty($_POST)) {
+            $this->model->load();
+
+            if (empty($this->model->attributes['password'])) {
+                unset($this->model->attributes['password']);
+            }
+
+            unset($this->model->attributes['email']);
+
+            if (!$this->model->validate($this->model->attributes)) {
+                $this->model->getErrors();
+            } else {
+                if (!empty($this->model->attributes['password'])) {
+                    $this->model->attributes['password'] = password_hash($this->model->attributes['password'], PASSWORD_DEFAULT);
+                }
+
+                if ($this->model->update('user', $_SESSION['user']['id'])) {
+                    $_SESSION['success'] = ___('user_credentials_success');
+                    foreach ($this->model->attributes as $k => $v) {
+                        if (!empty($v) && $k != 'password') {
+                            $_SESSION['user'][$k] = $v;
+                        }
+                    }
+                } else {
+                    $_SESSION['errors'] = ___('user_credentials_error');
+                }
+            }
+            redirect();
+        }
+
+        $this->setMeta(___('user_credentials_title'));
+    }
     public function signupAction()
     {
         if (User::checkAuth()) {
@@ -18,14 +57,12 @@ class UserController extends AppController
         }
 
         if (!empty($_POST)) {
-            $data = $_POST;
-            $this->model->load($data);
-            if (!$this->model->validate($data) || !$this->model->checkUnique()) {
+            $this->model->load();
+            if (!$this->model->validate($this->model->attributes) || !$this->model->checkUnique()) {
                 $this->model->getErrors();
-                $_SESSION['form_data'] = $data;
+                $_SESSION['form_data'] = $this->model->attributes;
             } else {
                 $this->model->attributes['password'] = password_hash($this->model->attributes['password'], PASSWORD_DEFAULT);
-                
                 if ($this->model->save('user')) {
                     $_SESSION['success'] = ___('user_signup_success_register');
                 } else {
@@ -34,7 +71,6 @@ class UserController extends AppController
             }
             redirect();
         }
-
 
         $this->setMeta(___('tpl_signup'));
     }
@@ -157,7 +193,7 @@ class UserController extends AppController
                 $_SESSION['errors'] = ___('user_download_error');
             }
         }
-        
+
         redirect();
     }
 
