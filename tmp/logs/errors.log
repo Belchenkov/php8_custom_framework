@@ -330,3 +330,19 @@
 =================
 [2023-09-19 13:38:48] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 69
 =================
+[2023-09-20 19:08:57] Текст ошибки: Trying to access array offset on value of type null | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\language\lang_tpl.php | Строка: 3
+=================
+[2023-09-20 19:09:07] Текст ошибки: Trying to access array offset on value of type null | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\language\lang_tpl.php | Строка: 3
+=================
+[2023-09-20 19:11:46] Текст ошибки: foreach() argument must be of type array|object, null given | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\menu\Menu.php | Строка: 75
+=================
+[2023-09-20 19:20:48] Текст ошибки: foreach() argument must be of type array|object, null given | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\menu\Menu.php | Строка: 75
+=================
+[2023-09-20 19:22:15] Текст ошибки: foreach() argument must be of type array|object, null given | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\menu\Menu.php | Строка: 79
+=================
+[2023-09-20 19:22:16] Текст ошибки: foreach() argument must be of type array|object, null given | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\menu\Menu.php | Строка: 79
+=================
+[2023-09-20 19:22:17] Текст ошибки: foreach() argument must be of type array|object, null given | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\menu\Menu.php | Строка: 79
+=================
+[2023-09-20 19:22:18] Текст ошибки: foreach() argument must be of type array|object, null given | Файл: C:\OSPanel\domains\new-ishop.loc\app\widgets\menu\Menu.php | Строка: 79
+=================

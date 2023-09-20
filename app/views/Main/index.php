@@ -1,3 +1,7 @@
+<?php
+use wfm\View;
+/** @var $this View */
+?>
 <?php if (!empty($slides)): ?>
     <div class="container-fluid my-carousel">
 
@@ -5,15 +9,18 @@
              data-bs-interval="5000">
             <div class="carousel-indicators">
                 <?php for ($i = 0; $i < count($slides); $i++): ?>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="<?= $i ?>" <?php if ($i == 0) echo 'class="active"' ?> aria-current="true" aria-label="Slide <?= $i ?>"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="<?= $i ?>" <?php if ($i == 0) echo 'class="active"' ?> aria-current="true"
+                            aria-label="Slide <?= $i ?>"></button>
                 <?php endfor; ?>
             </div>
             <div class="carousel-inner">
-                <?php $i = 1; foreach ($slides as $slide): ?>
-                <div class="carousel-item <?php if ($i == 1) echo 'active' ?>">
-                    <img src="<?= PATH . $slide->img ?>" class="d-block w-100" alt="">
-                </div>
-                <?php $i++; endforeach; ?>
+                <?php $i = 1;
+                foreach ($slides as $slide): ?>
+                    <div class="carousel-item <?php if ($i == 1) echo 'active' ?>">
+                        <img src="<?= PATH . $slide->img ?>" class="d-block w-100" alt="">
+                    </div>
+                    <?php $i++; endforeach; ?>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="prev">
@@ -35,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="section-title">Рекомендуемые товары</h3>
+                    <h3 class="section-title"><?php __('main_index_featured_products'); ?></h3>
                 </div>
 
                 <?php $this->getPart('parts/products_loop', compact('products')); ?>
