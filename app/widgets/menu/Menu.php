@@ -77,14 +77,14 @@ class Menu
         $tree = [];
         $data = $this->data;
 
-        foreach ($data as $id=>&$node) {
+        foreach ($data as $id => &$node) {
             if (!$node['parent_id']){
                 $tree[$id] = &$node;
             } else {
                 $data[$node['parent_id']]['children'][$id] = &$node;
             }
         }
-        
+
         return $tree;
     }
 
