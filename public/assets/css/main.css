@@ -87,6 +87,12 @@ section {
 	border-width: 0 10px;
 }
 
+.category-desc::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
 .btn{
 	position: relative;
 	overflow: hidden;
