@@ -426,3 +426,5 @@
 =================
 [2023-09-25 16:08:49] Текст ошибки: Call to undefined function get_field_array_value() | Файл: C:\OSPanel\domains\new-ishop.loc\app\views\admin\Category\add.php | Строка: 45
 =================
+[2023-09-30 13:35:41] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 69
+=================
