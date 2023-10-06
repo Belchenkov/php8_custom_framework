@@ -430,3 +430,5 @@
 =================
 [2023-10-03 08:54:41] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 69
 =================
+[2023-10-06 11:10:48] Текст ошибки: Контроллер app\controllers\admin\DownloadController не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 65
+=================
