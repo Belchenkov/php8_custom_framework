@@ -446,3 +446,5 @@
 =================
 [2023-10-12 14:03:48] Текст ошибки: Метод app\controllers\admin\UserController::editAction не найден | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 62
 =================
+[2023-10-13 15:55:41] Текст ошибки: Не найден вид C:\OSPanel\domains\new-ishop.loc/app/views/admin/User/edit.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 39
+=================
