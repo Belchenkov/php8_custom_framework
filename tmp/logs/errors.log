@@ -454,3 +454,5 @@
 =================
 [2023-10-17 10:50:47] Текст ошибки: Страница не найдена | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\Router.php | Строка: 69
 =================
+[2023-10-18 10:30:46] Текст ошибки: Не найден вид C:\OSPanel\domains\new-ishop.loc/app/views/admin/Page/add.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 39
+=================
