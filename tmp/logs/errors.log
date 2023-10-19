@@ -456,3 +456,5 @@
 =================
 [2023-10-18 10:30:46] Текст ошибки: Не найден вид C:\OSPanel\domains\new-ishop.loc/app/views/admin/Page/add.php | Файл: C:\OSPanel\domains\new-ishop.loc\vendor\wfm\View.php | Строка: 39
 =================
+[2023-10-19 09:27:37] Текст ошибки: Call to undefined method app\models\admin\Page::get_page() | Файл: C:\OSPanel\domains\new-ishop.loc\app\controllers\admin\PageController.php | Строка: 75
+=================
